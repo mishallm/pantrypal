@@ -5,8 +5,9 @@ from django.contrib.messages import constants as messages
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = "django-insecure-change-this-before-deploying"
-DEBUG = True
-ALLOWED_HOSTS = ["*"]  # tighten this when you deploy
+DEBUG = False
+ALLOWED_HOSTS = ["yourusername.pythonanywhere.com"]
+SECRET_KEY = "put-a-long-random-string-here-at-least-40-characters"
 
 INSTALLED_APPS = [
     "django.contrib.admin",
